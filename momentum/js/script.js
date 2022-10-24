@@ -1,4 +1,3 @@
-
 import audioPlaylist from './playList.js';
 
 async function getWeather(){
@@ -201,9 +200,13 @@ slideNext.addEventListener('click',function (event){
     const timeOfDay = getTimeOfDay(hours)
     getTimeOfDay(hours)
     const currentNumber = randNumber()
-    body.style.cssText = `
+    const img = new Image()
+    img.src = `img/background/${timeOfDay}/${currentNumber}.jpg`
+    img.addEventListener('load', function (event){
+        body.style.cssText = `
  background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
  background-size: cover;`
+    })
     slidePrev.setAttribute('disabled', 'disabled')
     slideNext.setAttribute('disabled', 'disabled')
     setTimeout(function(){
@@ -213,5 +216,3 @@ slideNext.addEventListener('click',function (event){
         slidePrev.removeAttribute('disabled')
     },3000)
 })
-
-
