@@ -2,7 +2,7 @@
 import audioPlaylist from './playList.js';
 
 async function getWeather(){
-     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=en&appid=08f2a575dda978b9c539199e54df03b0&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=en&appid=08f2a575dda978b9c539199e54df03b0&units=metric`;
     const res = await fetch(url)
     const data = await res.json()
     weatherIcon.className = 'weather-icon owf';
@@ -101,14 +101,18 @@ playPrev.addEventListener('click',prevSound)
 
 
 function setBg(){
+    const img = new Image()
+    img.src = `img/background/${timeOfDay}/${currentNumber}.jpg`
+    img.onload=()=>{
+        body.style.cssText = `
+ background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
+ background-size: cover;`
+    }
     const date = new Date();
     const hours = date.getHours()
     const timeOfDay = getTimeOfDay(hours)
     getTimeOfDay(hours)
     const currentNumber = randNumber()
-    body.style.cssText = `
- background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
- background-size: cover;`
 }
 setInterval(setBg,300000)
 
