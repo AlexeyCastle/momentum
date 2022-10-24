@@ -82,7 +82,7 @@ img {
 }
 
 body {
-  transition: all 3s;
+  transition: all 2s;
   background: url("../img/background/bg.jpg") no-repeat;
   background-size: cover;
 }
