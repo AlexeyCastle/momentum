@@ -101,19 +101,19 @@ playPrev.addEventListener('click',prevSound)
 
 function setBg(){
     const img = new Image()
+    const date = new Date();
+    const hours = date.getHours()
+    const currentNumber = randNumber()
+    getTimeOfDay(hours)
+    const timeOfDay = getTimeOfDay(hours)
     img.src = `img/background/${timeOfDay}/${currentNumber}.jpg`
     img.onload=()=>{
         body.style.cssText = `
  background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
  background-size: cover;`
     }
-    const date = new Date();
-    const hours = date.getHours()
-    const timeOfDay = getTimeOfDay(hours)
-    getTimeOfDay(hours)
-    const currentNumber = randNumber()
 }
-setInterval(setBg,300000)
+setInterval(setBg,60000)
 
 
 function showTime() {
