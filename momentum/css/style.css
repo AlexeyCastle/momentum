@@ -212,7 +212,6 @@ body {
 .main .time {
   padding-bottom: 30px;
   margin: 0 auto;
-  width: 20%;
   font-size: 150px;
   color: #ffffff;
   background: transparent;
@@ -235,7 +234,6 @@ body {
   }
 }
 .main .calendar {
-  width: 30%;
   margin: 0 auto;
   font-size: 50px;
   color: #fff;
@@ -252,10 +250,12 @@ body {
   opacity: 0.8;
 }
 .main .greeting #name {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   font-size: 60px;
   opacity: 0.8;
-  width: 350px;
+  width: 310px;
   background: transparent;
   color: #FFFFFF;
 }
@@ -266,11 +266,11 @@ body {
   margin: 0 auto;
 }
 .main .controls {
-  transform: translate(0, -50%);
+  transform: translate(0, -60px);
   opacity: 0.4;
   display: flex;
   justify-content: space-between;
-  animation: controls 5s ease-in-out infinite;
+  animation: controls 3s ease-in-out infinite;
 }
 .main .controls img {
   cursor: pointer;

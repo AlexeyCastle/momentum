@@ -208,7 +208,7 @@ body{
   .time{
     padding-bottom: 30px;
     margin: 0 auto;
-    width: 20%;
+    //width: 20%;
     font-size: 150px;
     color: #ffffff;
     background: transparent;
@@ -253,7 +253,7 @@ body{
 
   }
   .calendar{
-    width: 30%;
+    //width: 30%;
     margin: 0 auto;
     font-size: 50px;
     color:#fff;
@@ -269,10 +269,12 @@ body{
       opacity: .8;
     }
     #name {
+      position: relative;
+      z-index: 1;
       display: inline-block;
       font-size: 60px;
       opacity: .8;
-      width: 350px;
+      width: 310px;
       background: transparent;
       color: #FFFFFF;
     }
@@ -285,11 +287,11 @@ body{
     }
   }
   .controls{
-    transform: translate(0,-50%);
+    transform: translate(0,-60px);
     opacity: .4;
     display: flex;
     justify-content: space-between;
-    animation: controls 5s ease-in-out infinite;
+    animation: controls 3s ease-in-out infinite;
     img{
       cursor: pointer;
     }
