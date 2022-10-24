@@ -193,20 +193,39 @@ body {
   color: white;
   padding-bottom: 10px;
 }
+.weather i {
+  animation: appear 5s linear infinite;
+}
 .weather .temperature {
   font-size: 40px;
   color: #ffffff;
   padding-bottom: 10px;
+  animation: appear 5s linear infinite;
 }
 .weather .weather-description {
   font-size: 30px;
   color: #fff;
   padding-bottom: 10px;
+  animation: appear 5s linear infinite;
 }
 .weather .humidity, .weather .pressure, .weather .wind {
   padding-bottom: 10px;
   font-size: 30px;
   color: #fff;
+  animation: appear 5s linear infinite;
+}
+@keyframes appear {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    color: #FFFFFF;
+    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF, 0 0 21px #FFFFFF, 0 0 42px #f80000, 0 0 82px #f80000, 0 0 92px #f80000;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 .main .time {

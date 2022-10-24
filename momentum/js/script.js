@@ -29,7 +29,6 @@ const play = document.querySelector('.play')
 const stop = document.querySelector('.pause')
 const playPrev = document.querySelector('.play-prev')
 const playNext = document.querySelector('.play-next')
-input.addEventListener('change', getWeather)
 const playListContainer = document.querySelector('.play-list')
 const li = document.querySelector('.play-item')
 const slidePrev = document.querySelector('.prev-slide')
@@ -37,6 +36,7 @@ const slideNext = document.querySelector('.next-slide')
 const body = document.querySelector('.body')
 const audio = new Audio()
 const date = new Date()
+input.addEventListener('change', getWeather)
 
 
 audioPlaylist.forEach(element=>{
@@ -61,6 +61,24 @@ function stopAudio(){
     stop.classList.toggle('none')
 
 }
+function nextSong(){
+    if(playNum === audioPlaylist.length-1){
+        playListContainer.children[audioPlaylist.length-1].classList.remove('active')
+        playNum = 0
+        playListContainer.children[playNum].classList.add('active')
+        playAudio()
+    }
+    else{
+        playNum++
+        audio.src=audioPlaylist[playNum].src
+        playListContainer.children[playNum].classList.add('active')
+        playListContainer.children[playNum-1].classList.remove('active')
+        playAudio()
+    }
+}
+audio.addEventListener('ended', function (){
+    nextSong()
+})
 
 function prevSound(){
     if(playNum===0) {
