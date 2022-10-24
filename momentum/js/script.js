@@ -178,6 +178,7 @@ function randNumber(){
     return random
 }
 slidePrev.addEventListener('click',function (event){
+    const date = new Date()
     const hours = date.getHours()
     const timeOfDay = getTimeOfDay(hours)
     getTimeOfDay(hours)
