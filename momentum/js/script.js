@@ -190,9 +190,6 @@ slidePrev.addEventListener('click',function (event){
  background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
  background-size: cover;`
     })
-    body.style.cssText = `
- background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
- background-size: cover;`
     slidePrev.setAttribute('disabled', 'disabled')
     slideNext.setAttribute('disabled', 'disabled')
     setTimeout(function(){
