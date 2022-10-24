@@ -182,6 +182,13 @@ slidePrev.addEventListener('click',function (event){
     const timeOfDay = getTimeOfDay(hours)
     getTimeOfDay(hours)
     const currentNumber = randNumber()
+    const img = new Image()
+    img.src = `img/background/${timeOfDay}/${currentNumber}.jpg`
+    img.addEventListener('load', function (event){
+        body.style.cssText = `
+ background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
+ background-size: cover;`
+    })
     body.style.cssText = `
  background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
  background-size: cover;`
@@ -189,10 +196,10 @@ slidePrev.addEventListener('click',function (event){
     slideNext.setAttribute('disabled', 'disabled')
     setTimeout(function(){
         slidePrev.removeAttribute('disabled')
-    },3000)
+    },2000)
     setTimeout(function(){
         slideNext.removeAttribute('disabled')
-    },3000)
+    },2000)
 })
 slideNext.addEventListener('click',function (event){
     const date = new Date();
@@ -211,8 +218,8 @@ slideNext.addEventListener('click',function (event){
     slideNext.setAttribute('disabled', 'disabled')
     setTimeout(function(){
         slideNext.removeAttribute('disabled')
-    },3000)
+    },2000)
     setTimeout(function(){
         slidePrev.removeAttribute('disabled')
-    },3000)
+    },2000)
 })
