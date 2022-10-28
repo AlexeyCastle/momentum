@@ -212,20 +212,6 @@ body {
   padding-bottom: 10px;
   font-size: 30px;
   color: #fff;
-  animation: appear 5s linear infinite;
-}
-@keyframes appear {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-    color: #FFFFFF;
-    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF, 0 0 21px #FFFFFF, 0 0 42px #f80000, 0 0 82px #f80000, 0 0 92px #f80000;
-  }
-  100% {
-    opacity: 0.5;
-  }
 }
 
 .main .time {
@@ -236,23 +222,9 @@ body {
   background: transparent;
   text-align: center;
   opacity: 0.6;
-  animation: time 5s infinite;
 }
-@keyframes time {
-  0% {
-    color: #f80000;
-    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF, 0 0 21px #FFFFFF, 0 0 42px #FFFFFF, 0 0 82px #FFFFFF, 0 0 92px #FFFFFF, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
-  }
-  50% {
-    color: #FFFFFF;
-    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF, 0 0 21px #FFFFFF, 0 0 42px #f80000, 0 0 82px #f80000, 0 0 92px #f80000, 0 0 102px #f80000, 0 0 151px #f80000;
-  }
-  100% {
-    color: #f80000;
-    text-shadow: 0 0 7px #FFFFFF, 0 0 10px #FFFFFF, 0 0 21px #FFFFFF, 0 0 42px #FFFFFF, 0 0 82px #FFFFFF, 0 0 92px #FFFFFF, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
-  }
-}
-.main .calendar {
+
+.calendar {
   margin: 0 auto;
   font-size: 50px;
   color: #fff;
@@ -260,15 +232,17 @@ body {
   opacity: 0.8;
   padding-bottom: 30px;
 }
-.main .greeting {
+
+.greeting {
   text-align: center;
   font-size: 60px;
   color: #fff;
 }
-.main .greeting .greeting-text {
+.greeting .greeting-text {
   opacity: 0.8;
 }
-.main .greeting #name {
+.greeting #name {
+  font-family: "Fasthand", cursive;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -278,29 +252,31 @@ body {
   background: transparent;
   color: #FFFFFF;
 }
-.main .greeting #name::placeholder {
+.greeting #name::placeholder {
   color: #fff;
 }
-.main .greeting .greeting-text {
+.greeting .greeting-text {
   margin: 0 auto;
 }
-.main .controls {
+
+.controls {
   transform: translate(0, -60px);
   opacity: 0.4;
   display: flex;
   justify-content: space-between;
   animation: controls 3s ease-in-out infinite;
 }
-.main .controls img {
+.controls img {
   cursor: pointer;
 }
-.main .controls .prev-slide, .main .controls .next-slide {
+.controls .prev-slide, .controls .next-slide {
   background: transparent;
 }
-.main .controls .prev-slide img, .main .controls .next-slide img {
+.controls .prev-slide img, .controls .next-slide img {
   width: 35px;
   height: 35px;
 }
+
 @keyframes controls {
   0% {
     opacity: 0.1;
@@ -312,8 +288,8 @@ body {
     opacity: 0.1;
   }
 }
-
 .footer .links-wrapper {
+  font-family: "Fasthand", cursive;
   display: flex;
   justify-content: space-between;
 }
