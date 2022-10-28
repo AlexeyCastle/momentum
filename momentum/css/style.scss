@@ -232,7 +232,6 @@ body{
   .time{
     padding-bottom: 30px;
     margin: 0 auto;
-    //width: 20%;
     font-size: 150px;
     color: #ffffff;
     background: transparent;
@@ -277,7 +276,6 @@ body{
 
   }
   .calendar{
-    //width: 30%;
     margin: 0 auto;
     font-size: 50px;
     color:#fff;
@@ -321,6 +319,10 @@ body{
     }
     .prev-slide,.next-slide{
       background: transparent;
+      img{
+        width: 35px;
+        height: 35px;
+      }
     }
   }
   @keyframes controls {
@@ -335,3 +337,30 @@ body{
     }
   }
 }
+.footer {
+  .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .youtube, .twitch, .vk, .instagram, .ok, .twitter, .google, .facebook {
+      width: 100px;
+      height: auto;
+
+      img {
+        margin-left: 35px;
+        width: 30px;
+        height: 30px;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+

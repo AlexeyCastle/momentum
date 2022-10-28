@@ -297,6 +297,10 @@ body {
 .main .controls .prev-slide, .main .controls .next-slide {
   background: transparent;
 }
+.main .controls .prev-slide img, .main .controls .next-slide img {
+  width: 35px;
+  height: 35px;
+}
 @keyframes controls {
   0% {
     opacity: 0.1;
@@ -307,6 +311,26 @@ body {
   100% {
     opacity: 0.1;
   }
+}
+
+.footer .links-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .links-wrapper .youtube, .footer .links-wrapper .twitch, .footer .links-wrapper .vk, .footer .links-wrapper .instagram, .footer .links-wrapper .ok, .footer .links-wrapper .twitter, .footer .links-wrapper .google, .footer .links-wrapper .facebook {
+  width: 100px;
+  height: auto;
+}
+.footer .links-wrapper .youtube img, .footer .links-wrapper .twitch img, .footer .links-wrapper .vk img, .footer .links-wrapper .instagram img, .footer .links-wrapper .ok img, .footer .links-wrapper .twitter img, .footer .links-wrapper .google img, .footer .links-wrapper .facebook img {
+  margin-left: 35px;
+  width: 30px;
+  height: 30px;
+}
+.footer .links-wrapper .youtube p, .footer .links-wrapper .twitch p, .footer .links-wrapper .vk p, .footer .links-wrapper .instagram p, .footer .links-wrapper .ok p, .footer .links-wrapper .twitter p, .footer .links-wrapper .google p, .footer .links-wrapper .facebook p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
