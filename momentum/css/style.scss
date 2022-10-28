@@ -207,26 +207,26 @@ body{
     padding-bottom: 10px;
     font-size: 30px;
     color: #fff;
-    animation: appear 5s linear infinite;
+    //animation: appear 5s linear infinite;
   }
-  @keyframes appear {
-    0%{
-      opacity: 0.5;
-    }
-    50%{
-      opacity: 1;
-      color: #FFFFFF;
-      text-shadow: 0 0 7px #FFFFFF,
-      0 0 10px #FFFFFF,
-      0 0 21px #FFFFFF,
-      0 0 42px #f80000,
-      0 0 82px #f80000,
-      0 0 92px #f80000;
-    }
-    100%{
-      opacity: 0.5;
-    }
-  }
+  //@keyframes appear {
+  //  0%{
+  //    opacity: 0.5;
+  //  }
+  //  50%{
+  //    opacity: 1;
+  //    color: #FFFFFF;
+  //    text-shadow: 0 0 7px #FFFFFF,
+  //    0 0 10px #FFFFFF,
+  //    0 0 21px #FFFFFF,
+  //    0 0 42px #f80000,
+  //    0 0 82px #f80000,
+  //    0 0 92px #f80000;
+  //  }
+  //  100%{
+  //    opacity: 0.5;
+  //  }
+  //}
 }
 .main{
   .time{
@@ -237,42 +237,42 @@ body{
     background: transparent;
     text-align: center;
     opacity: .6;
-    animation: time 5s infinite;
+    //animation: time 5s infinite;
   }
-  @keyframes time {
-    0%{
-      color: #f80000;
-      text-shadow: 0 0 7px #FFFFFF,
-      0 0 10px #FFFFFF,
-      0 0 21px #FFFFFF,
-      0 0 42px #FFFFFF,
-      0 0 82px #FFFFFF,
-      0 0 92px #FFFFFF,
-      0 0 102px #FFFFFF,
-      0 0 151px #FFFFFF;
-    }
-    50%{
-      color: #FFFFFF;
-      text-shadow: 0 0 7px #FFFFFF,
-      0 0 10px #FFFFFF,
-      0 0 21px #FFFFFF,
-      0 0 42px #f80000,
-      0 0 82px #f80000,
-      0 0 92px #f80000,
-      0 0 102px #f80000,
-      0 0 151px #f80000;
-    }
-    100%{
-      color: #f80000;
-      text-shadow: 0 0 7px #FFFFFF,
-      0 0 10px #FFFFFF,
-      0 0 21px #FFFFFF,
-      0 0 42px #FFFFFF,
-      0 0 82px #FFFFFF,
-      0 0 92px #FFFFFF,
-      0 0 102px #FFFFFF,
-      0 0 151px #FFFFFF;
-    }
+  //@keyframes time {
+  //  0%{
+  //    color: #f80000;
+  //    text-shadow: 0 0 7px #FFFFFF,
+  //    0 0 10px #FFFFFF,
+  //    0 0 21px #FFFFFF,
+  //    0 0 42px #FFFFFF,
+  //    0 0 82px #FFFFFF,
+  //    0 0 92px #FFFFFF,
+  //    0 0 102px #FFFFFF,
+  //    0 0 151px #FFFFFF;
+  //  }
+  //  50%{
+  //    color: #FFFFFF;
+  //    text-shadow: 0 0 7px #FFFFFF,
+  //    0 0 10px #FFFFFF,
+  //    0 0 21px #FFFFFF,
+  //    0 0 42px #f80000,
+  //    0 0 82px #f80000,
+  //    0 0 92px #f80000,
+  //    0 0 102px #f80000,
+  //    0 0 151px #f80000;
+  //  }
+  //  100%{
+  //    color: #f80000;
+  //    text-shadow: 0 0 7px #FFFFFF,
+  //    0 0 10px #FFFFFF,
+  //    0 0 21px #FFFFFF,
+  //    0 0 42px #FFFFFF,
+  //    0 0 82px #FFFFFF,
+  //    0 0 92px #FFFFFF,
+  //    0 0 102px #FFFFFF,
+  //    0 0 151px #FFFFFF;
+  //  }
 
   }
   .calendar{
@@ -291,6 +291,7 @@ body{
       opacity: .8;
     }
     #name {
+      font-family: 'Fasthand', cursive;
       position: relative;
       z-index: 1;
       display: inline-block;
@@ -336,9 +337,10 @@ body{
       opacity: .1;
     }
   }
-}
+
 .footer {
   .links-wrapper {
+    font-family: 'Fasthand', cursive;
     display: flex;
     justify-content: space-between;
 
