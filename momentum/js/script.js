@@ -146,9 +146,8 @@ function showTime() {
     greeting.textContent = greetingText
     time.textContent = currentTime;
     showDate()
-    setTimeout(showTime, 1000);
 }
-showTime();
+setInterval(showTime, 500);
 
 function showDate(){
     const date = new Date()
