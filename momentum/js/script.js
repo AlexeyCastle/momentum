@@ -80,6 +80,9 @@ audio.addEventListener('ended', function (){
     nextSong()
 })
 
+
+
+
 function prevSound(){
     if(playNum===0) {
         playListContainer.children[playNum].classList.remove('active')
@@ -131,7 +134,7 @@ function setBg(){
  background-size: cover;`
     }
 }
-setInterval(setBg,60000)
+setInterval(setBg,30000)
 
 
 function showTime() {
@@ -206,6 +209,7 @@ slidePrev.addEventListener('click',function (event){
     img.addEventListener('load', function (event){
         body.style.cssText = `
  background: url("img/background/${timeOfDay}/${currentNumber}.jpg")no-repeat;
+
  background-size: cover;`
     })
     slidePrev.setAttribute('disabled', 'disabled')
